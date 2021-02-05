@@ -1,3 +1,29 @@
-body {
-    background-color: tomato;
+#search-screen {
+    font-family: 'Jua', sans-serif;
+}
+
+.myAvartar {
+    height: 300px;
+    width: 300px;
+
+    display: block;
+    margin: 0px auto;
+}
+
+.search-header {
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+.search-box__window {
+    width: 600px;
+    height: 30px;
+    padding: 5px;
 }
