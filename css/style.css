@@ -1,0 +1,9 @@
+/* components css */
+
+/* pages css */
+@import "css/pages/index.css";    
+       
+.body{
+    height: 1500vh;
+}
+       
