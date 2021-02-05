@@ -2,6 +2,7 @@
 
 /* pages css */
 @import "css/pages/index.css";    
+@import "css/pages/search.css";
        
 .body{
     height: 1500vh;
