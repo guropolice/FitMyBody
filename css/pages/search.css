@@ -20,6 +20,7 @@
     align-items: center;
 
     margin-top: 15px;
+    position: relative;
 }
 
 .search-box__window {
@@ -27,3 +28,12 @@
     height: 30px;
     padding: 5px;
 }
+
+.search-box span {
+    position: absolute;
+}
+
+.search-box span {
+    left: 210px;
+}
+
