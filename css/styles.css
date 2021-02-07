@@ -1,2 +1,14 @@
-/*screens*/
-@import "screens/set_info.css";
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+/* components css */
+
+/* screens css */
+@import "screens/index.css";
+@import "screens/set_info.css";    
+@import "screens/search.css";
+       
+.body{
+    height: 1500vh;
+}
+       
