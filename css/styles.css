@@ -1,14 +1,13 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
 /* components css */
-
+@import "components/nav-bar.css";
 /* screens css */
 @import "screens/index.css";
-@import "screens/set_info.css";    
+@import "screens/set_info.css";
 @import "screens/search.css";
-       
-.body{
-    height: 1500vh;
+
+.body {
+  height: 1500vh;
 }
-       

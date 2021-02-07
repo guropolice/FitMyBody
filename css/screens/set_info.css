@@ -5,20 +5,6 @@ body {
   padding: 0px;
 }
 
-.mySizeTitle {
-  border-bottom: 3px solid #000000;
-  padding-bottom: 2px;
-  margin: 0px;
-  padding: 0px;
-  font-family: "Gulim", "Apple SD Gothic", Auto, sans-serif;
-  width: 100%;
-  position: fixed;
-  background-color: rosybrown;
-}
-.mySizeTitle .title {
-  font-size: 16px;
-  display: flex;
-}
 .mysize-input {
   padding: 20px 0px;
   display: flex;
@@ -70,9 +56,9 @@ body {
     border-color: rosybrown;
   }
 }
-.body-type :hover img {
-  animation-name: chcolor;
-  animation-duration: 3s;
+
+.body-type:hover img {
+  animation: chcolor 0.3s ease-in forwards;
 }
 
 .input {
