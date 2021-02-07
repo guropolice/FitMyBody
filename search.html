@@ -16,12 +16,24 @@
     <!-- Search box -->
     <header class="search-header">당신이 입을 옷은 무엇인가요?</header>
     <div class="search-box">
-        <span><i class="fas fa-search"></i></span>
+        <i class="fas fa-search fa-xl"></i>
+
+        <!-- input box focus하면 검색어 기록처럼 예전에 검색했던 옷 목록 띄워주거나 
+        같은 성별, 나이대 사람들이 제일 많이 검색한 옷 1~5위까지 보여주는 것도 괜찮은듯 -->
         <input class="search-box__window" placeholder="링크, 옷 이름, 옷 코드 중 하나를 입력해주세요">
-        <button class="search-box__delete-content"><i class="fas fa-times"></i></button>
+        <span class="search-box__delete-content"><i class="fas fa-times fa-xl" onclick="clearInput()"></i></span>
+    </div>
+
+    <div class="search-result">
+        <img class="search-result__image"
+            src="https://image.msscdn.net/images/goods_img/20190919/1159065/1159065_2_500.jpg">
+        <h1 class="search-result__name">FATALISM #0214 Moderation indigo straight fit</h1>
+        <h3 class="search-result__guide">이 옷을 입어보시겠습니까?</h3>
+        <button class="move-to-fitting-btn" onclick="fitting-room.html">입어보기</button>
     </div>
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>
