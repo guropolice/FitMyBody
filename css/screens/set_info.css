@@ -1,0 +1,91 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mySizeTitle {
+  border-bottom: 3px solid #000000;
+  padding-bottom: 2px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gulim", "Apple SD Gothic", Auto, sans-serif;
+  width: 100%;
+  position: fixed;
+  background-color: rosybrown;
+}
+.mySizeTitle .title {
+  font-size: 16px;
+  display: flex;
+}
+.mysize-input {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.three-D-ModelImg {
+  display: flex;
+  height: 250px;
+  width: 250px;
+  margin-top: 45px;
+  margin-left: 80px;
+}
+
+.body-img,
+.img {
+  display: flex;
+  height: 150px;
+  width: 150px;
+}
+.body-img {
+  border: 3px solid black;
+  border-radius: 75px;
+}
+.chose-body-type,
+.body-type {
+  margin: 0px 10px;
+}
+.body-type :nth-child(2) {
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+}
+
+@keyframes changecolor {
+  from {
+    border: 3px solid black;
+  }
+  to {
+    border: 3px solid rosybrown;
+  }
+}
+@keyframes chcolor {
+  from {
+    border-color: black;
+  }
+  to {
+    border-color: rosybrown;
+  }
+}
+.body-type :hover img {
+  animation-name: chcolor;
+  animation-duration: 3s;
+}
+
+.input {
+  padding: 5px 0;
+}
+.input :first-child {
+  padding-right: 20px;
+}
+.my-len,
+.my-height {
+  margin-right: 31px;
+}
+
+.chose-body-type {
+  font-size: 24px;
+}

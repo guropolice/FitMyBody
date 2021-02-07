@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-URL = "https://store.musinsa.com/app/goods/978464"
+URL = "https://store.musinsa.com/app/goods/1760748"
 # https://store.musinsa.com/app/
 # https://store.musinsa.com/app/goods/1760748
 # https://store.musinsa.com/app/goods/978464
