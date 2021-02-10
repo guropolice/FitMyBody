@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FittingRoom</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- jquery import -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--ajax 사용법-->
+    <!-- 
+    <script>
+        function q1(){
+            //jquery로 비워줌
+            $('#id').empty()
+            $.ajax(
+                {
+                    type:"GET",
+                    url:"ex)서울시 미세먼지",
+                    data: {},
+                    success: function(response){
+                        let rows = response['RealtimeCityAir']['row']
+
+                        for(let i = 0; i<rows.length; i++){
+                            let gu_name = rows[i]['MSRTE_NM']
+                            let gu_mise = rows[i]['IDEX_MVL']
+
+                            let temp_html = `<li>${gu_name} : ${gu_mise}</li>`
+                            //jquery로
+                            $('#id').append(temp_html)
+                        }
+
+                    }
+                }
+            )
+        }
+    </script> 
+    -->
 </head>
 <body>
     <div class="mysize-input">
