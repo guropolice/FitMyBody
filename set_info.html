@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FittingRoom</title>
+    <title>FindYourFit</title>
     <link rel="stylesheet" href="css/styles.css">
     <!-- jquery import -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -36,6 +36,15 @@
         }
     </script> 
     -->
+    <script>
+        function hide(){
+            if($(".body-type").css("display")=="block"){
+                $(".body-type").hide();
+            } else{
+                $(".body-type").show();
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="mysize-input">
@@ -69,6 +78,7 @@
    <div class="mysize-input">
        <div class="chose-body-type">
            <span class="chose-body-type">근육량</span>
+           <input type="submit" value="근육량" onclick="hied()" />
        </div>
        <div class="body-type">
             <img class="body-img" src="https://data.silhouette-ac.com/data/thumbnails/2f/2f44c2ae7f5abc81618af205b373173e_w.jpeg">
