@@ -3,8 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FittingRoom</title>
+    <title>FindYourFit</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- jquery import -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--ajax 사용법-->
+    <!-- 
+    <script>
+        function q1(){
+            //jquery로 비워줌
+            $('#id').empty()
+            $.ajax(
+                {
+                    type:"GET",
+                    url:"ex)서울시 미세먼지",
+                    data: {},
+                    success: function(response){
+                        let rows = response['RealtimeCityAir']['row']
+
+                        for(let i = 0; i<rows.length; i++){
+                            let gu_name = rows[i]['MSRTE_NM']
+                            let gu_mise = rows[i]['IDEX_MVL']
+
+                            let temp_html = `<li>${gu_name} : ${gu_mise}</li>`
+                            //jquery로
+                            $('#id').append(temp_html)
+                        }
+
+                    }
+                }
+            )
+        }
+    </script> 
+    -->
+    <script>
+        function hide(){
+            if($(".body-type").css("display")=="block"){
+                $(".body-type").hide();
+            } else{
+                $(".body-type").show();
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="mysize-input">
@@ -38,6 +78,7 @@
    <div class="mysize-input">
        <div class="chose-body-type">
            <span class="chose-body-type">근육량</span>
+           <input type="submit" value="근육량" onclick="hied()" />
        </div>
        <div class="body-type">
             <img class="body-img" src="https://data.silhouette-ac.com/data/thumbnails/2f/2f44c2ae7f5abc81618af205b373173e_w.jpeg">
