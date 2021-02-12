@@ -19,7 +19,7 @@
   width: 300px;
 
   display: block;
-  margin: 0px auto;
+  margin: auto;
   animation: myAvartar_animation 10s linear infinite;
 }
 

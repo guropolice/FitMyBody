@@ -1,65 +1,74 @@
-.main_box {
-}
-
-.info {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 400px;
-  font-size: 13mm;
-  margin-bottom: 0;
-}
-
-.box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 0 300px 300px 300px;
-}
-
-.image {
-  width: 400px;
-  height: 400px;
-  display: flex;
-}
-
-.login_box {
-  width: 400px;
-  height: 500px;
-  margin-top: 70px;
-}
-
-#login-form {
+.main-box {
   display: flex;
   flex-direction: column;
-  justify-items: space-evenly;
-  margin: 20px 30px;
-  border: grey;
+  align-items: center;
+
+  margin: 64px 0px;
 }
 
-#login-form input {
-  border: none;
-  padding: 15px 0px;
-  font-size: 18px;
-  margin-bottom: 15px;
+.title-box {
+  font-family: 'Lobster', cursive;
+  font-size: 64px;
+  margin: 12px 0px;
 }
 
-#login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease-in-out;
+.title-box span:first-child {
+  color: #CCCCFF;
+}
+.title-box span:nth-child(2) {
+  color: #FFBF00;
+}
+.title-box span:last-child {
+  color: #9FE2BF;
 }
 
-#login-form input:focus {
-  border-color: rgb(140, 195, 226);
+.login-box {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
 }
 
-#login-form input[type="submit"] {
-  background-color: rgb(140, 195, 226);
-  cursor: pointer;
-  padding: 20px 0px;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 40px;
+}
+
+.login-form input {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
 
-.programmar {
-  text-align: center;
+.login-form .login-button {  
+  width: 274px;
+  border: none;
+  background-color: #6495ED;
+  color: white;
 }
+
+.sign-up {
+  width: 298px;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  text-align: center;
+  font-size: 13.5px;
+}
+
+.sign-up__btn {
+  color: #6495ED;
+  font-weight: bold;
+}
+

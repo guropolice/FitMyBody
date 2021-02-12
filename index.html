@@ -1,67 +1,54 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <link rel="stylesheet" href="css/styles.css"/>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>fitting room</title>
-        
-        <link rel="apple-touch-icon" sizes="57x57" href="icon/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="icon/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="icon/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="icon/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="icon/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="icon/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="icon/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="icon/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="icon/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="icon/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon/favicon-16x16.png">
-        <link rel="manifest" href="icon/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="icon/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-    </head>
 
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitting room</title>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icon/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icon/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
 
-
-    <body>
-    
-    
-    <div class="main_box">
-        
-        <div class="info"></div>
-        <div class="box">
-            <div class="image">
-                <img src="https://pbs.twimg.com/profile_images/1306051401236099072/nuSA8oqW_400x400.jpg"/>
+<body>
+    <div class="main-box">
+        <div class="login-box">
+            <div class="title-box">
+                <span>F</span>ind<span>Y</span>our<span>F</span>it
             </div>
-             
-            <div class="login_box">
-        
-                <form action="#" method="GET" id="login-form">
-                <input name="username" type="text" placeholder="구글 아이디"/>
-                <input name="password" type="password" placeholder="구글 비밀번호"/>
-                <input type="submit" value="로그인"/>
-                </form>
-        
-            </div>
-
+            <form class="login-form">
+                <input name="username" type="text" placeholder="사용자 이름 또는 이메일" />
+                <input name="password" type="password" placeholder="비밀번호" />
+                <input class="login-button" type="button" value="로그인" onclick="location.href='search.html'">
+            </form>
         </div>
-        
-        
-        
-        <div class ="programmar"> 
+        <div class="sign-up">
+            <span>계정이 없으신가요?</span>
+            <a href="set_info.html" class="sign-up__btn">가입하기</a>
+        </div>
+
+        <div class="programmar">
             <i class="far fa-copyright"></i> <span>2021 Fitting Room made by S,K,Y</span>
-            <script src="https://kit.fontawesome.com/6478f529f2.js"
-            crossorigin="anonymous">
-        </script>
+            <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous">
+            </script>
         </div>
+    </div>
+</body>
 
-    </div> 
-
-
-    </body>
 </html>

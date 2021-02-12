@@ -1,8 +1,13 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Reset CSS */
+@import "reset.css";
 
 /* components css */
 @import "components/nav-bar.css";
+
 /* screens css */
 @import "screens/index.css";
 @import "screens/set_info.css";

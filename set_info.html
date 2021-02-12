@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,71 +38,75 @@
     </script> 
     -->
     <script>
-        function hide(){
-            if($(".body-type").css("display")=="block"){
+        function hide() {
+            if ($(".body-type").css("display") == "block") {
                 $(".body-type").hide();
-            } else{
+            } else {
                 $(".body-type").show();
             }
         }
     </script>
 </head>
+
 <body>
     <div class="mysize-input">
-    <header class="mySizeTitle">
-        <h1 class="title" >Fitting Room</h1>
-    </header>
+        <header class="mySizeTitle">
+            <h1 class="title">Fitting Room</h1>
+        </header>
     </div>
-   <div class="mysize-input">
-       <div class="three-D-ModelImg">
-           <img class="jeni" src="https://dimg.donga.com/wps/NEWS/IMAGE/2020/03/04/99993712.2.jpg">
-       </div>
-   </div>
+    <div class="mysize-input">
+        <div class="three-D-ModelImg">
+            <img class="jeni" src="https://dimg.donga.com/wps/NEWS/IMAGE/2020/03/04/99993712.2.jpg">
+        </div>
+    </div>
     <div class="mysize-input">
         <div class="img">
-            <img class="mySizeImg" 
-                src="http://image.msscdn.net/skin/musinsa/images/mypage/my_default.png">
+            <img class="mySizeImg" src="http://image.msscdn.net/skin/musinsa/images/mypage/my_default.png">
         </div>
         <form class="form">
             <div class="input">
                 <label class="my-height">키</label>
-                <input class="n-input" type="number" placeholder="키" >
+                <input class="n-input" type="number" placeholder="키">
                 <span>cm</span>
             </div>
             <div class="input">
                 <label>몸무게</label>
-                <input class="n-input" type="number" placeholder="몸무게" >
+                <input class="n-input" type="number" placeholder="몸무게">
                 <span>kg</span>
             </div>
         </form>
     </div>
-   <div class="mysize-input">
-       <div class="chose-body-type">
-           <span class="chose-body-type">근육량</span>
-           <input type="submit" value="근육량" onclick="hied()" />
-       </div>
-       <div class="body-type">
-            <img class="body-img" src="https://data.silhouette-ac.com/data/thumbnails/2f/2f44c2ae7f5abc81618af205b373173e_w.jpeg">
+    <div class="mysize-input">
+        <div class="chose-body-type">
+            <span class="chose-body-type">근육량</span>
+            <input type="submit" value="근육량" onclick="hied()" />
+        </div>
+        <div class="body-type">
+            <img class="body-img"
+                src="https://data.silhouette-ac.com/data/thumbnails/2f/2f44c2ae7f5abc81618af205b373173e_w.jpeg">
             <span>적음</span>
             <p>운동량(주 0~1회)</p>
         </div>
         <div class="body-type">
-            <img class="body-img" src="https://data.silhouette-ac.com/data/thumbnails/d7/d71c7a5aa9b07317cff1b74872bc06c7_w.jpeg">
+            <img class="body-img"
+                src="https://data.silhouette-ac.com/data/thumbnails/d7/d71c7a5aa9b07317cff1b74872bc06c7_w.jpeg">
             <span>보통</span>
             <p>운동량(주 1~2회)</p>
         </div>
         <div class="body-type">
-            <img class="body-img" src="https://data.silhouette-ac.com/data/thumbnails/e8/e80b5248417bc61216762399cd942429_w.jpeg">
+            <img class="body-img"
+                src="https://data.silhouette-ac.com/data/thumbnails/e8/e80b5248417bc61216762399cd942429_w.jpeg">
             <span>많음</span>
             <p>운동량(주 3회 이상)</p>
         </div>
-   </div>
+    </div>
     <div class="mysize-input">
-        <from action="search.html" method="get" > 
-            <input type="submit" value="Fitting" onClick="location.href='search.html'"/>
+        <from action="search.html" method="get">
+            <input type="submit" value="Fitting" onclick="location.href='search.html'" />
         </from>
     </div>
 </body>
+
 </html>
 
 
