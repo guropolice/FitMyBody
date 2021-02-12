@@ -1,14 +1,8 @@
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-}
 .mySizeTitle {
+  display: block;
   border-bottom: 3px solid #000000;
   height: 50px;
-  margin: 0px;
-  padding: 0px;
+  
   font-family: "Gulim", "Apple SD Gothic", Auto, sans-serif;
   width: 100%;
   position: fixed;
