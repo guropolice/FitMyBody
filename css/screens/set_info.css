@@ -1,37 +1,56 @@
+.wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .mysize-input {
   padding: 10px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
-.three-D-ModelImg {
-  display: flex;
+.mySizeImg{
   height: 250px;
   width: 250px;
-  margin-top: 45px;
-  margin-left: 80px;
 }
 
-.body-img,
-.img {
-  display: flex;
+
+.muscle-size{
+  margin: 25px 0px;
+  width: 600px;
+}
+
+.title-info{
+  margin-bottom: 10px;
+  font-family: "Lobster", cursive;
+}
+
+.body-img {
   height: 150px;
   width: 150px;
-}
-.body-img {
   border: 3px solid black;
   border-radius: 75px;
-}
-.chose-body-type,
-.body-type {
-  margin: 0px 10px;
-}
-.body-type :nth-child(2) {
+
   display: flex;
-  justify-content: center;
-  margin-top: 13px;
+  justify-content: space-between;
 }
+
+.body-img__div {
+  text-align: center;
+}
+
+.body-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  margin: 13px 10px;
+}
+
 
 @keyframes changecolor {
   from {
@@ -50,16 +69,14 @@
   }
 }
 
-.body-type:hover img {
-  animation: chcolor 0.3s ease-in forwards;
+.body-img__div:active img {
+  animation: chcolor 2s forwards;
 }
 
 .input {
   padding: 5px 0;
 }
-.input :first-child {
-  padding-right: 20px;
-}
+
 .my-len,
 .my-height {
   margin-right: 31px;
