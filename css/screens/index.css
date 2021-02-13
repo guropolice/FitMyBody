@@ -54,7 +54,7 @@
 .login-form .login-button {
   width: 274px;
   border: none;
-  background-color: #6495ed;
+  background-color: var(--fiyfi-blue);
   color: white;
 }
 
@@ -79,8 +79,9 @@
 }
 
 .sign-up__btn {
-  color: #6495ed;
+  color: var(--fiyfi-blue);
   font-weight: bold;
+  text-decoration: none;
 }
 
 .form-item {

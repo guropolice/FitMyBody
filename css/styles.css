@@ -4,6 +4,8 @@
 
 /* Reset CSS */
 @import "reset.css";
+/* Often used css */
+@import "variables.css";
 
 /* components css */
 @import "components/nav-bar.css";
@@ -12,6 +14,7 @@
 @import "screens/index.css";
 @import "screens/set_info.css";
 @import "screens/search.css";
+
 
 body {
   width: 100vw;

@@ -9,17 +9,13 @@
   background-color: #333333;
   top: 0;
   left: 0;
-}
-.mySizeTitle .title {
-  font-family: "Lobster", cursive;
-  font-size: 16px;
-  display: flex;
-  top: 33%;
-  bottom: 33%;
 
-  color: #d6d6d5;
+  z-index: 999;
 }
 
 .title {
-  margin-left: 10px;
+  font-family: "Lobster", cursive;
+  font-size: 16px;
+  color: #d6d6d5;
+  margin: 10px 10px;
 }

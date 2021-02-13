@@ -56,10 +56,6 @@
   display: block;
 }
 
-.body-img__div:hover {
-  border: 3px solid red;
-}
-
 .body-type {
   display: flex;
   justify-content: space-between;
@@ -68,14 +64,6 @@
   margin: 13px 10px;
 }
 
-@keyframes changecolor {
-  from {
-    border: 3px solid black;
-  }
-  to {
-    border: 3px solid rosybrown;
-  }
-}
 @keyframes chcolor {
   from {
     border-color: black;
@@ -85,8 +73,8 @@
   }
 }
 
-.body-img__div:active img {
-  animation: chcolor 2s forwards;
+.body-img__div:hover img {
+  animation: chcolor .3s forwards;
 }
 
 .input {
@@ -100,4 +88,25 @@
 
 .chose-body-type {
   font-size: 24px;
+}
+
+.move-to-search {
+  color: white;
+  background-color: var(--fiyfi-blue);
+  border: none;
+  border-radius: 5px;
+
+  display: block;
+  width: 70px;
+  height: 30px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.move-to-search:hover {
+  cursor: pointer;
+}
+
+.move-to-search:focus {
+  outline: none;
 }
