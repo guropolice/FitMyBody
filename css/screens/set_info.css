@@ -64,14 +64,6 @@
   margin: 13px 10px;
 }
 
-@keyframes changecolor {
-  from {
-    border: 3px solid black;
-  }
-  to {
-    border: 3px solid rosybrown;
-  }
-}
 @keyframes chcolor {
   from {
     border-color: black;
