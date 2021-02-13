@@ -92,7 +92,7 @@
 
 .move-to-search {
   color: white;
-  background-color: #6495ed;
+  background-color: var(--fiyfi-blue);
   border: none;
   border-radius: 5px;
 
@@ -101,6 +101,10 @@
   height: 30px;
   padding: 5px;
   margin-top: 20px;
+}
+
+.move-to-search:hover {
+  cursor: pointer;
 }
 
 .move-to-search:focus {
