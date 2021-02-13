@@ -82,7 +82,7 @@
 }
 
 .body-img__div:hover img {
-  animation: chcolor 1s forwards;
+  animation: chcolor .3s forwards;
 }
 
 .input {
