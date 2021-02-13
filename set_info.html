@@ -5,7 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FindYourFit</title>
+
+    <style>
+        html,body{height:100%; overflow:hidden}
+        
+    </style>
+
+
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- 파비콘 적용 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icon/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icon/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icon/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icon/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icon/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icon/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icon/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icon/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icon/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    
+    
     <!-- jquery import -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--ajax 사용법-->
@@ -49,12 +79,14 @@
 </head>
 
 <body>
+    <div class="mysize-input">
+        <header class="mySizeTitle">
+            <h1 class="title">Fitting Room</h1>
+        </header>
+    </div>
+
     <div class="wrap">
-        <div class="mysize-input">
-            <header class="mySizeTitle">
-                <h1 class="title">Fitting Room</h1>
-            </header>
-        </div>
+        
         <div class="mysize-input">
 
             <img class="mySizeImg" src="http://image.msscdn.net/skin/musinsa/images/mypage/my_default.png">
@@ -86,19 +118,19 @@
                     <img class="body-img"
                         src="https://data.silhouette-ac.com/data/thumbnails/2f/2f44c2ae7f5abc81618af205b373173e_w.jpeg">
                     <!-- <p>운동량(주 1~2회)</p> -->
-                    <p>메루치</p>
+                    <p class = "shape">메루치</p>
                 </div>
                 <div class="body-img__div">
                     <img class="body-img"
                         src="https://data.silhouette-ac.com/data/thumbnails/d7/d71c7a5aa9b07317cff1b74872bc06c7_w.jpeg">
                     <!-- <p>운동량(주 1~2회)</p> -->
-                    <p>보통</p>
+                    <p class = "shape">보통</p>
                 </div>
                 <div class="body-img__div">
                     <img class="body-img"
                         src="https://data.silhouette-ac.com/data/thumbnails/e8/e80b5248417bc61216762399cd942429_w.jpeg">
                     <!-- <p>운동량(주 3회 이상)</p> -->
-                    <p>돼지</p>
+                    <p class = "shape">돼지</p>
                 </div>
             </div>
             <div class="mysize-input">

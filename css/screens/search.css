@@ -1,5 +1,7 @@
-#search-screen {
+.search-screen {
   font-family: "Jua", sans-serif;
+  position: relative;
+  top: 5%;
 }
 
 @keyframes myAvartar_animation {
@@ -15,10 +17,10 @@
 }
 
 .myAvartar {
+  display: block;
   height: 300px;
   width: 300px;
 
-  display: block;
   margin: auto;
   animation: myAvartar_animation 10s linear infinite;
 }

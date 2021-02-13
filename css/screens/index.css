@@ -1,25 +1,30 @@
+.body {
+  height: 100%;
+}
+
 .main-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  margin: 64px 0px;
+  position: relative;
+  top: 30%;
+  bottom: 40%;
 }
 
 .title-box {
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: 64px;
   margin: 12px 0px;
 }
 
 .title-box span:first-child {
-  color: #CCCCFF;
+  color: #ccccff;
 }
 .title-box span:nth-child(2) {
-  color: #FFBF00;
+  color: #ffbf00;
 }
 .title-box span:last-child {
-  color: #9FE2BF;
+  color: #9fe2bf;
 }
 
 .login-box {
@@ -48,10 +53,10 @@
   border-radius: 5px;
 }
 
-.login-form .login-button {  
+.login-form .login-button {
   width: 274px;
   border: none;
-  background-color: #6495ED;
+  background-color: #6495ed;
   color: white;
 }
 
@@ -68,7 +73,6 @@
 }
 
 .sign-up__btn {
-  color: #6495ED;
+  color: #6495ed;
   font-weight: bold;
 }
-

@@ -1,8 +1,15 @@
-.wrap{
+.body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  position: relative;
+  top: 10%;
 }
 
 .mysize-input {
@@ -10,23 +17,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
-.mySizeImg{
+.mysize-input:nth-child(2) {
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.mySizeImg {
   height: 250px;
   width: 250px;
 }
 
-
-.muscle-size{
+.muscle-size {
   margin: 25px 0px;
   width: 600px;
 }
 
-.title-info{
+.title-info {
   margin-bottom: 10px;
   font-family: "Lobster", cursive;
+  font-size: 18px;
 }
 
 .body-img {
@@ -34,23 +45,31 @@
   width: 150px;
   border: 3px solid black;
   border-radius: 75px;
-
   display: flex;
   justify-content: space-between;
 }
 
+.shape {
+  position: relative;
+  top: 10px;
+}
+
 .body-img__div {
   text-align: center;
+  display: block;
+}
+
+.body-img__div:hover {
+  border: 3px solid red;
 }
 
 .body-type {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   margin: 13px 10px;
 }
-
 
 @keyframes changecolor {
   from {
