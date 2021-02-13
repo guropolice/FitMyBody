@@ -82,3 +82,12 @@
   color: #6495ed;
   font-weight: bold;
 }
+
+.form-item {
+  flex-direction: column;
+  margin-top: 15px;
+}
+.google-icon {
+  width: 48px;
+  height: 48px;
+}
