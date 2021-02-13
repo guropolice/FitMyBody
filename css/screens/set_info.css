@@ -56,10 +56,6 @@
   display: block;
 }
 
-.body-img__div:hover {
-  border: 3px solid red;
-}
-
 .body-type {
   display: flex;
   justify-content: space-between;
@@ -85,8 +81,8 @@
   }
 }
 
-.body-img__div:active img {
-  animation: chcolor 2s forwards;
+.body-img__div:hover img {
+  animation: chcolor 1s forwards;
 }
 
 .input {
