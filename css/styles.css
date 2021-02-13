@@ -14,5 +14,6 @@
 @import "screens/search.css";
 
 .body {
-  height: 1500vh;
+  width: 100vw;
+  height: 100vh;
 }
