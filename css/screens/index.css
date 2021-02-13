@@ -58,6 +58,14 @@
   color: white;
 }
 
+.login-form input:focus {
+  outline: none;
+}
+
+.login-form input:last-child:hover {
+  cursor: pointer;
+}
+
 .sign-up {
   width: 298px;
   margin: 10px 0px;
