@@ -97,3 +97,20 @@
 .chose-body-type {
   font-size: 24px;
 }
+
+.move-to-search {
+  color: white;
+  background-color: #6495ed;
+  border: none;
+  border-radius: 5px;
+
+  display: block;
+  width: 70px;
+  height: 30px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.move-to-search:focus {
+  outline: none;
+}
