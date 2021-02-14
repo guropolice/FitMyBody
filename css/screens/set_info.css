@@ -94,10 +94,10 @@
   color: white;
   background-color: var(--fiyfi-blue);
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
 
   display: block;
-  width: 70px;
+  width: 100px;
   height: 30px;
   padding: 5px;
   margin-top: 20px;
@@ -105,8 +105,13 @@
 
 .move-to-search:hover {
   cursor: pointer;
+  background-color: var(--fiyfi-blue__selected);
 }
 
 .move-to-search:focus {
+  outline: none;
+}
+
+.n-input:focus {
   outline: none;
 }

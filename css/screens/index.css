@@ -6,7 +6,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -280px 0px 0px -170px;
+  margin: -300px 0px 0px -170px;
 }
 
 .title-box {
@@ -66,6 +66,7 @@
 
 .login-form input:last-child:hover {
   cursor: pointer;
+  background-color: var(--fiyfi-blue__selected);
 }
 
 .sign-up {
@@ -86,6 +87,10 @@
   text-decoration: none;
 }
 
+.sign-up__btn:hover {
+  color: var(--fiyfi-blue__selected);
+}
+
 .login-items {
   margin-top: 15px;
   align-items: center;
@@ -102,6 +107,7 @@
 }
 .sns-title{
   font-family: 'Acme', sans-serif;
+  opacity: 0.5;
 }
 .naver-login{
   width: 274px;
@@ -153,4 +159,20 @@
 }
 .sns-login{
   margin: 5px;
+  position: relative;
+}
+
+.sns-login:hover {
+  cursor: pointer;
+}
+
+.sns-login__comp {
+  position: absolute;
+  top: 2px;
+  left: 45px;
+}
+
+.find-user-info {
+  margin-top: 5px;
+  opacity: 0.5;
 }

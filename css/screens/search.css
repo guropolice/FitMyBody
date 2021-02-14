@@ -86,14 +86,21 @@
   animation: fade_in 0.4s linear;
 }
 
+.search-result__name {
+  font-weight: 200;
+  font-size: 30px;
+  margin: 15px 0px;
+}
+
 .move-to-fitting-btn {
   border: none;
   border-radius: 25px;
-  background-color: #2f8fdc;
+  background-color: var(--fiyfi-blue);
   color: white;
 
   width: 100px;
   height: 30px;
+  margin: 10px 0px;
 }
 
 .move-to-fitting-btn:focus {
@@ -102,5 +109,5 @@
 
 .move-to-fitting-btn:hover {
   cursor: pointer;
-  background-color: #4b9edd;
+  background-color: var(--fiyfi-blue__selected);
 }
