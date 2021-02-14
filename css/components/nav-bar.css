@@ -1,19 +1,20 @@
 .mySizeTitle {
-  display: block;
   /* border-bottom: 3px solid #000000; */
   height: 40px;
-
   font-family: "Gulim", "Apple SD Gothic", Auto, sans-serif;
   width: 100%;
   position: fixed;
   background-color: #333333;
   top: 0;
   left: 0;
-
   z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.title {
+.title,
+.menu {
   font-family: "Lobster", cursive;
   font-size: 16px;
   color: #d6d6d5;
