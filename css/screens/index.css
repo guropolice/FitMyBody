@@ -14,7 +14,9 @@
   font-size: 64px;
   margin: 12px 0px;
 }
-
+.title-span {
+  margin-right: 0.1px;
+}
 .title-box span:first-child {
   color: #ccccff;
 }
@@ -84,11 +86,17 @@
   text-decoration: none;
 }
 
-.form-item {
-  flex-direction: column;
+.login-items {
   margin-top: 15px;
+  align-items: center;
+  text-align: center;
 }
-.google-icon {
-  width: 48px;
-  height: 48px;
+.login-items p {
+  margin-bottom: 12px;
+  color: #333333;
+}
+.login-item {
+  width: 274px;
+  height: 40px;
+  margin: 2px 0px;
 }
