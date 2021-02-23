@@ -44,7 +44,7 @@
 
                 <div class="google-login sns-login">
                     <img class="google-logo-img" src="img/goolge-logo3.png">
-                    <div class="sns-login__comp" type="button">Google로 시작하기</div>
+                    <div class="sns-login__comp" onclick="loginWithGoogle();">Google로 시작하기</div>
                 </div>
                 <div class="kakao-login sns-login">
                     <img class="kakao-logo-img" src="img/kakao-circle.png">
@@ -94,17 +94,20 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
 
-        const auth = firebase.auth();
-        const authProvider = new firebase.auth.GoogleAuthProvider();
-        auth.onAuthStateChanged(function (user) {
-            if (user) {
-                // 인증 성공
-                console.log("success");
-            } else {
-                // 인증 실패
-                auth.signInWithPopup(authProvider);
-            }
-        });
+        function loginWithGoogle() {
+            const auth = firebase.auth();
+            const authProvider = new firebase.auth.GoogleAuthProvider();
+            auth.onAuthStateChanged(function (user) {
+                if (user) {
+                    // 인증 성공
+                    console.log("success");
+                } else {
+                    // 인증 실패
+                    auth.signInWithPopup(authProvider);
+                }
+            });
+
+        }
     </script>
 </body>
 
