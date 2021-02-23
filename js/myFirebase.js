@@ -1,4 +1,5 @@
 import * as firebase from "firebase/app";
+import "firebase/auth";
 
 const firebaseConfig = {
     apiKey: "AIzaSyCbLIIXGs2pZMq7PAQ6OQbOIwBWHOXy_uA",
@@ -10,6 +11,18 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+
+const auth = firebase.auth();
+const authProvider = new firebase.auth.GoogleAuthProvider();
+auth.onAuthStateChanged(function (user) {
+    if (user) {
+        // 인증 성공
+        console.log("success");
+    } else {
+        // 인증 실패
+        auth.signInWithPopup(authProvider);
+    }
+});
 
 // export const authService = firebase.auth();
 

@@ -33,9 +33,9 @@
                 <span class="title-span">Fi</span>nd<span>Y</span>our<span class="title-span">Fi</span>t
             </div>
             <form class="login-form">
-                <input name="username" type="text" placeholder="사용자 이름 또는 이메일" />
-                <input name="password" type="password" placeholder="비밀번호" />
-                <input class="login-button" type="button" value="로그인" onclick="location.href='search.html'">
+                <input class="js-user-id" name="username" type="text" placeholder="사용자 이름 또는 이메일" />
+                <input class="js-user-pw" name="password" type="password" placeholder="비밀번호" />
+                <input class="login-button" type="button" value="로그인" onclick="blockEmpty();">
 
             </form>
             <div class="login-items center">
@@ -44,7 +44,7 @@
 
                 <div class="google-login sns-login">
                     <img class="google-logo-img" src="img/goolge-logo3.png">
-                    <div class="sns-login__comp">Google로 시작하기</div>
+                    <div class="sns-login__comp" type="button">Google로 시작하기</div>
                 </div>
                 <div class="kakao-login sns-login">
                     <img class="kakao-logo-img" src="img/kakao-circle.png">
@@ -71,7 +71,41 @@
             </script>
         </div>
     </div>
+    <script src="js/auth.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
 
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCbLIIXGs2pZMq7PAQ6OQbOIwBWHOXy_uA",
+            authDomain: "findyourfit-f796c.firebaseapp.com",
+            databaseURL: "https://findyourfit-f796c-default-rtdb.firebaseio.com",
+            projectId: "findyourfit-f796c",
+            storageBucket: "findyourfit-f796c.appspot.com",
+            messagingSenderId: "896675566116",
+            appId: "1:896675566116:web:1834adc1d309fd56ee7eb1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth();
+        const authProvider = new firebase.auth.GoogleAuthProvider();
+        auth.onAuthStateChanged(function (user) {
+            if (user) {
+                // 인증 성공
+                console.log("success");
+            } else {
+                // 인증 실패
+                auth.signInWithPopup(authProvider);
+            }
+        });
+    </script>
 </body>
 
 </html>
