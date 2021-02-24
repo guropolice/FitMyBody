@@ -117,10 +117,9 @@
   /* 원래 네이버 색
    #1EC800 */
 }
-#naverIdLogin_loginButton {
+#naverIdLogin img {
   width: 274px;
   height: 40px;
-  text-align: center;
 }
 .naver-login div {
   color: #ffffff;
