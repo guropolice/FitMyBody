@@ -4,9 +4,8 @@
   align-items: center;
   position: absolute;
   top: 50%;
-  left: 50%; 
+  left: 50%;
   margin: -300px 0px 0px -170px;
-
 }
 
 .title-box {
@@ -117,6 +116,11 @@
   background-color: #1ec800;
   /* 원래 네이버 색
    #1EC800 */
+}
+#naverIdLogin_loginButton {
+  width: 274px;
+  height: 40px;
+  text-align: center;
 }
 .naver-login div {
   color: #ffffff;

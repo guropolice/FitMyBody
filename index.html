@@ -78,14 +78,12 @@
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
-<<<<<<< HEAD
-
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
     <!--google 로그인-->
-=======
->>>>>>> ddfd1a8f0c85ca6971a55511de8f4491e55e45d1
+
+
     <script>
         const firebaseConfig = {
             apiKey: "AIzaSyCbLIIXGs2pZMq7PAQ6OQbOIwBWHOXy_uA",
@@ -122,7 +120,7 @@
             clientId: "FLZytrxToQVxAIugyHGB",
             callbackUrl: "http://localhost:5000/set_info.html",
             isPopup: true, /* 팝업을 통한 연동처리 여부 */
-            //loginButton: {color: "green", type: 3, height: 60} /* 로그인 버튼의 타입을 지정 */
+            loginButton: {color: "green", type: 3, height: 40 ,width:274 } /* 로그인 버튼의 타입을 지정 */
         }
     );
     
@@ -131,27 +129,6 @@
         /* 설정정보를 초기화하고 연동을 준비 */
         naverLogin.init();
 
-        /* (4) Callback의 처리. 정상적으로 Callback 처리가 완료될 경우 main page로 redirect(또는 Popup close) */
-		window.addEventListener('load', function () {
-			naverLogin.getLoginStatus(function (status) {
-				if (status) {
-					/* (5) 필수적으로 받아야하는 프로필 정보가 있다면 callback처리 시점에 체크 */
-                    let name = naverLogin.user.getName();
-					let email = naverLogin.user.getEmail();
-					if( email == undefined || email == null) {
-						alert("이메일은 필수정보입니다. 정보제공을 동의해주세요.");
-						/* (5-1) 사용자 정보 재동의를 위하여 다시 네아로 동의페이지로 이동함 */
-						naverLogin.reprompt();
-						return;
-					}
-
-					    window.location.replace("http://" + window.location.hostname + ( (location.port==""||location.port==undefined)?"":":" + location.port) );
-				} else {
-					console.log("callback 처리에 실패하였습니다.");
-				}
-			});
-		});
-        
     </script>
     <!-- // 네이버아이디로로그인 초기화 Script -->
 </body>
