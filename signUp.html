@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+    <script src=".firebase/signUp_init.js"></script>
+    <script src="js/signUp.js"></script>
+</head>
+<body>
+    <div id="signUp">
+        <label for="fiyfi_id">ID: </label><input type="email" id="fiyfi_id" /><br />
+        <label for="fiyfi_pw">PW: </label><input type="password" id="fiyfi_pw" /><br />
+        <label for="fiyfi_confirm">Confirm: </label><input type="password" id="fiyfi_confirm" /><br />
+        <button onclick="signUp()">Sign Up</button>
+    </div>
+    <div id="error">
+        An error occurred: <span id="errmsg"></span>
+        <button onclick="back();">Back</button>
+    </div>
+</body>
+</html>
