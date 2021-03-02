@@ -16,11 +16,11 @@ function signOut() {
     }
     
     firebase.auth().signOut().then(() => {
-        location.replace('http://localhost:5000/');
+        location.replace('index.html');
     }, function(e) {
         lastWork = "authorized";
         $("#error #errmsg").html(e.message)
         $("#error").show();
         $("#authorized").hide();
     });
-}
+} 
