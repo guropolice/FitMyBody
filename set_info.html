@@ -26,7 +26,9 @@
     <meta name="msapplication-TileImage" content="icon/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+    <script src=".firebase/signUp_init.js"></script>
 
 
     <!-- jquery import -->
@@ -137,6 +139,9 @@
                 <form action="search.html" method="get">
                     <input class="move-to-search" type="button" value="Fitting" onClick="location.href='search.html'" />
                 </form>
+            </div>
+            <div class="mysize-input">
+                <button onclick="signOut()">Sign Out</button>
             </div>
         </div>
     </div>

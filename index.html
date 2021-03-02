@@ -24,6 +24,11 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icon/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+    <script src=".firebase/signUp_init.js"></script>
+    <script src="js/index.js"></script>
     <script type="text/javascript" src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js" charset="utf-8"></script>
 
 </head>
@@ -35,11 +40,15 @@
                 <span class="title-span">Fi</span>nd<span>Y</span>our<span class="title-span">Fi</span>t
             </div>
             <form class="login-form">
-                <input class="js-user-id" name="username" type="text" placeholder="사용자 이름 또는 이메일" />
-                <input class="js-user-pw" name="password" type="password" placeholder="비밀번호" />
-                <input class="login-button" type="button" value="로그인" onclick="blockEmpty()">
+                <input class="js-user-id" name="username" type="text" placeholder="Email" />
+                <input class="js-user-pw" name="password" type="password" placeholder="password" />
+                <input class="login-button" type="button" value="로그인" onclick="signIn()">
 
             </form>
+            <div id="error">
+                An error occurred: <span id="errmsg"></span><br />
+                <button onclick="back();">Back</button>
+            </div>
             <div class="login-items center">
 
                 <p class="sns-title"> sns 계정으로 시작하기</p>
@@ -61,7 +70,7 @@
         </div>
         <div class="sign-up">
             <span>계정이 없으신가요?</span>
-            <a href="set_info.html" class="sign-up__btn">가입하기</a>
+            <a href="signUp.html" class="sign-up__btn">가입하기</a>
             <div class="find-user-info">
                 <a class="search_id__btn" onclick="open1()">아이디 찾기</a> | <a class="search_pwd__btn" onclick="open2()">비밀번호 찾기</a>
             </div>
