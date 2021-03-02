@@ -1,4 +1,4 @@
-const Config = {
+let Config = {
     apiKey: "AIzaSyCbLIIXGs2pZMq7PAQ6OQbOIwBWHOXy_uA",
     authDomain: "findyourfit-f796c.firebaseapp.com",
     databaseURL: "https://findyourfit-f796c-default-rtdb.firebaseio.com/",

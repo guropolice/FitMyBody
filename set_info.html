@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <title>Find Your Fit</title>
     <link rel="stylesheet" href="css/styles.css">
 
@@ -26,10 +27,9 @@
     <meta name="msapplication-TileImage" content="icon/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
-    <script src=".firebase/signUp_init.js"></script>
-
+    
 
     <!-- jquery import -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -141,11 +141,12 @@
                 </form>
             </div>
             <div class="mysize-input">
-                <button onclick="signOut()">Sign Out</button>
+                <button class="singOut" onclick="signOut()">Sign Out</button>
             </div>
         </div>
     </div>
 
+    <script src=".firebase/signUp_init.js"></script>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
     <script src="js/toggle-nav-bar.js"></script>
 
