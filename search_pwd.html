@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비밀번호 찿기</title>
     <link rel="stylesheet" href="css/styles.css" />
+    
+    
 </head>
 
 
@@ -18,11 +20,16 @@
 
         <div class = "input_id_bigBox">
             <form class = "input_id__form">
-                <input class="js-input-id" type="text" placeholder="사용하는 아이디"/>
-                <input class="input-button" type="button" value="찿기" onclick=""/>
+                <input class="js-input-id" type="text" id="fiyfi_id" placeholder="사용하는 아이디"/>
+                <input class="input-button" type="button" id="target" value="찿기"/>
             </form>
         </div>
         
     </div>
+
+    <script src="./js/search_pwd.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src=".firebase/signUp_init.js"></script>
 </body>
 </html>
