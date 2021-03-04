@@ -8,14 +8,17 @@
     <title>SignUp</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
     <script src=".firebase/signUp_init.js"></script>
     <script src="js/signUp.js"></script>
 </head>
 <body>
     <div id="signUp">
+        <label for="fiyfi_name">Name: </label><input type="text" id="fiyfi_name" placeholder="Name"/><br />
+        <label for="fiyfi_phoneNum">Phone number: </label><input type="number" id="fiyfi_phoneNum" placeholder="Phone number"/><br />
         <label for="fiyfi_id">ID: </label><input type="email" id="fiyfi_id" placeholder="Email" /><br />
-        <label for="fiyfi_pw">PW: </label><input type="password" id="fiyfi_pw" placeholder="password"/><br />
-        <label for="fiyfi_confirm">Confirm: </label><input type="password" id="fiyfi_confirm" placeholder="confirm password"/><br />
+        <label for="fiyfi_pw">PW: </label><input type="password" id="fiyfi_pw" placeholder="Password"/><br />
+        <label for="fiyfi_confirm">Confirm: </label><input type="password" id="fiyfi_confirm" placeholder="Confirm password"/><br />
         <button onclick="signUp()">Sign Up</button>
     </div>
     <div id="error">
