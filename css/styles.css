@@ -15,6 +15,7 @@
 @import "screens/set_info.css";
 @import "screens/search.css";
 @import "screens/search_pwd.css";
+@import "screens/search_id.css";
 
 body {
   width: 100vw;

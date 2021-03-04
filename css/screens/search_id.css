@@ -1,0 +1,31 @@
+.search_id_bigBox {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.id-search-name,
+.id-search-phoneNum {
+  width: 200px;
+  height: 22px;
+}
+
+.id-search-name {
+  margin: 10px 46px 5px;
+}
+
+.id-search-phoneNum {
+  margin: 0px 46px 5px;
+}
+
+.id-search-button {
+  display: block;
+  margin-left: 209px;
+  width: 45px;
+}
+
+.id-search-button:hover {
+  cursor: pointer;
+}

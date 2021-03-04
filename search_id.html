@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디 찿기</title>
+    <title>아이디 찾기</title>
     <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
     
+    
+</head>
+
+
+<body>
+    <div class = "main_box">
+        <div class = "title_box">
+            <h1>아이디 찾기</h1>
+            <h2>이름과 휴대폰번호를 입력해 주세요</h2>
+        </div>
+
+        <div class = "search_id_bigBox">
+            <form class = "search_id__form">
+                <input class="id-search-name" type="text"  placeholder="이름"/>
+                <input class="id-search-phoneNum" type="text"  placeholder="전화번호(숫자만)"/>
+                <input class="id-search-button" type="button" id="target" value="찿기"/>
+
+            </form>
+        </div>
+        
+    </div>
+
+    <script src="./js/search_pwd.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src=".firebase/signUp_init.js"></script>
 </body>
 </html>
