@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비밀번호 찾기</title>
     <link rel="stylesheet" href="css/styles.css" />
-    
-    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
+
 </head>
 
 
@@ -21,15 +22,20 @@
         <div class = "search_pwd_bigBox">
             <form class = "search_pwd__form">
                 <input class="js-search-pwd" type="text" id="fiyfi_id" placeholder="사용하는 아이디"/>
-                <input class="pwd-search-button" type="button" id="target" value="찿기"/>
+                <input class="pwd-search-button" type="button" id="btn-resetPassword" value="찿기"/>
             </form>
         </div>
         
     </div>
 
     <script src="./js/search_pwd.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src=".firebase/signUp_init.js"></script>
+   
+    
+    <script src=".firebase/firebase_connect.js"></script>
+
+    
+   
+  
+
 </body>
 </html>
