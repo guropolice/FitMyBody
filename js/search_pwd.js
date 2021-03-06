@@ -6,7 +6,7 @@ $("#btn-resetPassword").click(function()
 
     if(email != "")
     {
-        auth.sendPasswordResetEmail(String(fiyfi_id)).then(function()
+        auth.sendPasswordResetEmail(String(email)).then(function()
         {
                 window.alert("이메일을 확인해주세요!!");
         })
