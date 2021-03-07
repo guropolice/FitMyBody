@@ -7,8 +7,6 @@ let Config = {
 
 firebase.initializeApp(Config);
 
-
-
 // Sign out
 function signOut() {
     if (!confirm("Do you really want to log out?")) {
