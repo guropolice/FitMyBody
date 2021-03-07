@@ -7,17 +7,15 @@ const Config = {
 
 firebase.initializeApp(Config);
 
-
-
 // Sign out
 function signOut() {
-    if(!confirm("Do you really want to log out?")) {
+    if (!confirm("Do you really want to log out?")) {
         return;
     }
-    
+
     firebase.auth().signOut().then(() => {
         location.replace('http://localhost:5000/');
-    }, function(e) {
+    }, function (e) {
         lastWork = "authorized";
         $("#error #errmsg").html(e.message)
         $("#error").show();
