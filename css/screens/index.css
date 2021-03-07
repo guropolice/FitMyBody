@@ -90,6 +90,16 @@
   color: var(--fiyfi-blue__selected);
 }
 
+.search_id__btn:hover {
+  color: var(--fiyfi-blue__selected);
+  cursor: pointer;
+}
+
+.search_pwd__btn:hover {
+  color: var(--fiyfi-blue__selected);
+  cursor: pointer;
+}
+
 .login-items {
   margin-top: 15px;
   align-items: center;

@@ -1,6 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 /* Reset CSS */
 @import "reset.css";
@@ -14,6 +14,8 @@
 @import "screens/index.css";
 @import "screens/set_info.css";
 @import "screens/search.css";
+@import "screens/search_pwd.css";
+@import "screens/search_id.css";
 
 body {
   width: 100vw;
