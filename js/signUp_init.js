@@ -7,7 +7,7 @@
 
 // firebase.initializeApp(Config);
 
-import "../.firebase/firebase_connect";
+import { authService } from "../.firebase/firebase_connect";
 
 // Sign out
 export const logOut = () => {
