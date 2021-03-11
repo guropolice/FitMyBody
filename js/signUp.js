@@ -1,4 +1,5 @@
-
+import * as firebase from "firebase/app";
+import "firebase/auth";
 
 $(document).ready(function () {
     $("#error").hide();
